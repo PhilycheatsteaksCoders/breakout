@@ -23,7 +23,7 @@ private static final int NBRICK_ROWS = 15;
 private static final int BRICK_SEP = 3;
 private static final int BRICK_WIDTH =(WIDTH - (NBRICKS_PER_ROW - 1) * BRICK_SEP) / NBRICKS_PER_ROW;
 private static final int BRICK_HEIGHT = 20;
-private static final int BALL_RADIUS = 15;
+private static final int BALL_RADIUS = 20;
 private static final int BRICK_Y_OFFSET = 70;
 private static final int NTURNS = 3;
 
@@ -143,7 +143,7 @@ private static final int DELAY = 10;
 	
 	public void drawBall02(){
 			 
-			double x = getWidth()/3 - BALL_RADIUS;
+			double x = getWidth()/2 - BALL_RADIUS;
 			 double y = getHeight()/2 - BALL_RADIUS;
 			 ball02 = new GOval(x,y,BALL_RADIUS,BALL_RADIUS);
 			 ball02.setFilled(true);
@@ -202,7 +202,7 @@ private static final int DELAY = 10;
 		}
 	}
 	public void getBall02Velocity() {
-		vy = 6.0;
+		vy = 5.0;
 		vx = rgen.nextDouble(2.0, 6.0);
 		if (rgen.nextBoolean(1)) {
 			vx = -vx; 
